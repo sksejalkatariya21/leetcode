@@ -5,11 +5,12 @@ class Solution {
         }
         int a = 0;
         int b = 1;
+        int temp = 0;
         for(int i=2;i<=n;i++){
-            int temp = a+b;
+            temp = a+b;
             a = b;
             b = temp;
         }
-        return b;
+        return temp;
     }
 }
